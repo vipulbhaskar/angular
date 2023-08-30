@@ -1,0 +1,82 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - karma > log4js > hipchat-notifier > request > extend:
+        patched: '2023-08-30T21:34:24.676Z'
+        id: 'npm:extend:20180424'
+        path: karma > log4js > hipchat-notifier > request > extend
+    - karma > log4js > loggly > request > extend:
+        patched: '2023-08-30T21:34:24.676Z'
+        id: 'npm:extend:20180424'
+        path: karma > log4js > loggly > request > extend
+    - karma > log4js > slack-node > requestretry > extend:
+        patched: '2023-08-30T21:34:24.676Z'
+        id: 'npm:extend:20180424'
+        path: karma > log4js > slack-node > requestretry > extend
+    - karma > log4js > mailgun-js > proxy-agent > pac-proxy-agent > get-uri > extend:
+        patched: '2023-08-30T21:34:24.676Z'
+        id: 'npm:extend:20180424'
+        path: >-
+          karma > log4js > mailgun-js > proxy-agent > pac-proxy-agent > get-uri
+          > extend
+  'npm:hoek:20180212':
+    - karma > log4js > loggly > request > hawk > hoek:
+        patched: '2023-08-30T21:34:24.676Z'
+        id: 'npm:hoek:20180212'
+        path: karma > log4js > loggly > request > hawk > hoek
+    - karma > log4js > loggly > request > hawk > boom > hoek:
+        patched: '2023-08-30T21:34:24.676Z'
+        id: 'npm:hoek:20180212'
+        path: karma > log4js > loggly > request > hawk > boom > hoek
+    - karma > log4js > loggly > request > hawk > sntp > hoek:
+        patched: '2023-08-30T21:34:24.676Z'
+        id: 'npm:hoek:20180212'
+        path: karma > log4js > loggly > request > hawk > sntp > hoek
+    - '@bazel/karma > karma > log4js > loggly > request > hawk > hoek':
+        patched: '2023-08-30T21:34:24.676Z'
+        id: 'npm:hoek:20180212'
+        path: '@bazel/karma > karma > log4js > loggly > request > hawk > hoek'
+    - '@bazel/karma > karma > log4js > loggly > request > hawk > boom > hoek':
+        patched: '2023-08-30T21:34:24.676Z'
+        id: 'npm:hoek:20180212'
+        path: '@bazel/karma > karma > log4js > loggly > request > hawk > boom > hoek'
+    - '@bazel/karma > karma > log4js > loggly > request > hawk > sntp > hoek':
+        patched: '2023-08-30T21:34:24.676Z'
+        id: 'npm:hoek:20180212'
+        path: '@bazel/karma > karma > log4js > loggly > request > hawk > sntp > hoek'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - karma > log4js > mailgun-js > proxy-agent > https-proxy-agent:
+        patched: '2023-08-30T21:34:24.676Z'
+        id: SNYK-JS-HTTPSPROXYAGENT-469131
+        path: karma > log4js > mailgun-js > proxy-agent > https-proxy-agent
+    - karma > log4js > mailgun-js > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2023-08-30T21:34:24.676Z'
+        id: SNYK-JS-HTTPSPROXYAGENT-469131
+        path: >-
+          karma > log4js > mailgun-js > proxy-agent > pac-proxy-agent >
+          https-proxy-agent
+  SNYK-JS-LODASH-567746:
+    - karma > log4js > hipchat-notifier > lodash:
+        patched: '2023-08-30T21:34:24.676Z'
+        id: SNYK-JS-LODASH-567746
+        path: karma > log4js > hipchat-notifier > lodash
+    - karma > log4js > mailgun-js > async > lodash:
+        patched: '2023-08-30T21:34:24.676Z'
+        id: SNYK-JS-LODASH-567746
+        path: karma > log4js > mailgun-js > async > lodash
+    - karma > log4js > slack-node > requestretry > lodash:
+        patched: '2023-08-30T21:34:24.676Z'
+        id: SNYK-JS-LODASH-567746
+        path: karma > log4js > slack-node > requestretry > lodash
+  'npm:tunnel-agent:20170305':
+    - karma > log4js > loggly > request > tunnel-agent:
+        patched: '2023-08-30T21:34:24.676Z'
+        id: 'npm:tunnel-agent:20170305'
+        path: karma > log4js > loggly > request > tunnel-agent
+    - '@bazel/karma > karma > log4js > loggly > request > tunnel-agent':
+        patched: '2023-08-30T21:34:24.676Z'
+        id: 'npm:tunnel-agent:20170305'
+        path: '@bazel/karma > karma > log4js > loggly > request > tunnel-agent'
