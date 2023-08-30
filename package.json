@@ -27,14 +27,16 @@
     "test-ivy-aot": "bazel test --define=compile=aot --build_tag_filters=-no-ivy-aot,-fixme-ivy-aot --test_tag_filters=-no-ivy-aot,-fixme-ivy-aot",
     "test-fixme-ivy-aot": "bazel test --define=compile=aot --build_tag_filters=-no-ivy-aot --test_tag_filters=-no-ivy-aot",
     "list-fixme-ivy-targets": "bazel query --output=label 'attr(\"tags\", \"\\[.*fixme-ivy.*\\]\", //...) except kind(\"sh_binary\", //...) except kind(\"devmode_js_sources\", //...)' | sort",
-    "bazel": "bazel"
+    "bazel": "bazel",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "// 1": "dependencies are used locally and by bazel",
   "dependencies": {
     "@angular-devkit/architect": "^0.10.6",
     "@angular-devkit/core": "^7.0.4",
     "@angular-devkit/schematics": "^7.0.4",
-    "@bazel/karma": "~0.22.0",
+    "@bazel/karma": "~0.41.0",
     "@bazel/typescript": "~0.22.0",
     "@schematics/angular": "^7.0.4",
     "@types/chokidar": "1.7.3",
@@ -65,7 +67,7 @@
     "fs-extra": "4.0.2",
     "jasmine": "^3.1.0",
     "jasmine-core": "^3.1.0",
-    "karma": "^2.0.4",
+    "karma": "^3.0.0",
     "magic-string": "^0.25.0",
     "minimist": "1.2.0",
     "mock-fs": "^4.5.0",
@@ -81,7 +83,8 @@
     "typescript": "~3.2.2",
     "xhr2": "0.1.4",
     "yargs": "9.0.1",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "@snyk/protect": "latest"
   },
   "optionalDependencies": {
     "fsevents": "2.0.1"
@@ -143,5 +146,6 @@
     "vlq": "0.2.2",
     "vrsource-tslint-rules": "5.1.1",
     "webpack": "1.12.9"
-  }
+  },
+  "snyk": true
 }
