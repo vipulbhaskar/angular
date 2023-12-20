@@ -13,10 +13,10 @@
   "typings": "./src/ngc-wrapped/index.d.ts",
   "dependencies": {
     "@angular-devkit/architect": "^0.10.6",
-    "@angular-devkit/core": "^7.0.4",
+    "@angular-devkit/core": "^8.0.0",
     "@angular-devkit/schematics": "^7.0.4",
     "@bazel/typescript": "^0.21.0",
-    "@schematics/angular": "^7.0.4",
+    "@schematics/angular": "^8.0.0",
     "@types/node": "6.0.84",
     "semver": "^5.6.0",
     "shelljs": "0.8.2",
